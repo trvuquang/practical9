@@ -103,7 +103,7 @@ int main () {
     output.append(to_string(cum_res));
 
     if (err)
-        cout << "ERROR";
+        cout << "Error";
     else
         cout << output;
 

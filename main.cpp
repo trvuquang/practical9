@@ -2,7 +2,7 @@
 # include <sstream>
 # include <string>
 # include <array>
-# include "PrefixConvert.cpp"
+# include "PrefixConvert.h"
 
 using namespace std;
 

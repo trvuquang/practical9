@@ -34,7 +34,14 @@ string PrefixConvert::convert(string T[], int str_index){
     for (int i = n_operations; i < str_index; i++){
         if (isNumber(T[i])){
             oprd[oprd_index] = stoi(T[i]);
-            oprd_index++;
+            oprd_index++;    
+
+            if (oprd[oprd_index] > 99)
+                err = 1;
+            if (oprd[oprd_index] < 0)
+                err = 1;    
+            else   
+                err = 0;             
         }
         else
             err = 1;
